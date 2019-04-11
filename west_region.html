@@ -35,13 +35,39 @@
     <div class="flex-center">
     <div class="flex-center flex-column">
         <img height="500px" src="west_region.png" alt="West" class="center-block">
+        <img height="200px" src="West-table.png">
         <div class="container">
             <form action="/html/tags/html_form_tag_action.cfm" method="get">
                 1:
-                <input type="text" name="WA" value="" maxlength="100" />
+                <input id="e1" type="text" name="WA" value="" maxlength="100" />
+                    <script type="text/javascript">
+                        function state1(){
+                            var s1 = "Washington";
+                            var t1 = e1.value;
+                            if(t1 == s1){
+                                t1 = s1; 
+                            }
+                            else{
+                                
+                                value = value + s1[score];
+                            }
+                        }
+                    </script>
                 <br />
                 2:
-                <input type="text" name="OR" value="" maxlength="100" />
+                <input id="e2" type="text" name="OR" value="" maxlength="100" />
+                    <script type="text/javascript">
+                            function state2(){
+                            var s2 = "Oregon";
+                            var t2 = e2.value;
+                            if(t2 == s2){
+                                value = s2;
+                            }
+                            else{
+                                value = value + s2[score];
+                            }
+                        }
+                    </script>
                 <br />
                 3:
                 <input type="text" name="CA" value="" maxlength="100" />
@@ -69,11 +95,11 @@
                 <br />
                 11:
                 <input type="text" name="MT" value="" maxlength="100" />
-                <br />
+                <br><br />
                 
                 <ul class="nav nav-pills center">
 				        <a class="nav-item nav-link active" href="homepage.html">Return Home</a></li>
-				        <a class="nav-item nav-link" href="final_score1.html">Submit</a></li>
+				        <a class="nav-item nav-link" href="west_region.html">Submit</a></li>
 				</ul>
             </form>
             </div>
