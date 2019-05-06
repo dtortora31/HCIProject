@@ -20,7 +20,7 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">		
     
-    <title> West Region </title>
+    <title> Central America </title>
 	
 	<script type="text/javascript">
 		score = 1;
@@ -33,55 +33,59 @@
 <body>
     <div>
         <center>
-        <br><h1>Match each state by number.</h1>
+        <br><h1>Match each country by number.</h1>
         </center><br>
     </div><br><br>
     
     <div class="flex-center">
     <div class="flex-center flex-column">
-        <img height="500px" src="west_region.png" alt="West" class="center-block">
-        <img height="200px" src="West-table.png">
+        <img height="500px" src="central_america.png" alt="CA" class="center-block">
+        <img height="350px" src="CA-table.png">
         <div class="container">
 			<h1 id="scoreText">Your score is 1</h1>
             <form>
                 1:
-                <input id="e1" type="text" name="WA" value="" maxlength="100" />
+                <input id="e1" type="text" name="MX" value="" maxlength="100" />
                 <br />
                 2:
-                <input id="e2" type="text" name="OR" value="" maxlength="100" />
+                <input id="e2" type="text" name="GT" value="" maxlength="100" />
                 <br />
                 3:
-                <input id="e3" type="text" name="CA" value="" maxlength="100" />
+                <input id="e3" type="text" name="ES" value="" maxlength="100" />
                 <br />
                 4:
-                <input id="e4" type="text" name="NV" value="" maxlength="100" />
+                <input id="e4" type="text" name="HN" value="" maxlength="100" />
                 <br />
                 5:
-                <input id="e5" type="text" name="AZ" value="" maxlength="100" />
+                <input id="e5" type="text" name="BZ" value="" maxlength="100" />
                 <br />
                 6:
-                <input id="e6" type="text" name="NM" value="" maxlength="100" />
+                <input id="e6" type="text" name="NI" value="" maxlength="100" />
                 <br />
                 7:
-                <input id="e7" type="text" name="UT" value="" maxlength="100" />
+                <input id="e7" type="text" name="CR" value="" maxlength="100" />
                 <br />
                 8:
-                <input id="e8" type="text" name="CO" value="" maxlength="100" />
+                <input id="e8" type="text" name="PA" value="" maxlength="100" />
                 <br />
                 9:
-                <input id="e9" type="text" name="WY" value="" maxlength="100" />
+                <input id="e9" type="text" name="JM" value="" maxlength="100" />
                 <br />
                 10:
-                <input id="e10" type="text" name="ID" value="" maxlength="100" />
+                <input id="e10" type="text" name="CU" value="" maxlength="100" />
                 <br />
                 11:
-                <input id="e11" type="text" name="MT" value="" maxlength="100" />
+                <input id="e11" type="text" name="HT" value="" maxlength="100" />
+                <br />
+                12:
+                <input id="e12" type="text" name="DR" value="" maxlength="100" />
                 <br><br />
+                
                 
                 <script type="text/javascript">
                         function checkStates(){
-                            //Washington
-                            var s1 = "washington";
+                            //Mexico
+                            var s1 = "mexico";
                             var t1 = e1.value;
                             if(t1 == s1){
                                 t1 = s1; 
@@ -98,8 +102,8 @@
 								incorrect = true;
                             }
 							
-							// Oregon
-                            var s2 = "oregon";
+							// Guatemala
+                            var s2 = "guatemala";
                             var t2 = e2.value;
                             if(t2 == s2){
                                 t2 = s2; 
@@ -116,8 +120,8 @@
 								incorrect = true;
                             }
                             
-                            // California
-                            var s3 = "california";
+                            // El Salvador
+                            var s3 = "el salvador";
                             var t3 = e3.value;
                             if(t3 == s3){
                                 t3 = s3; 
@@ -134,8 +138,8 @@
 								incorrect = true;
                             }
                             
-                            // Nevada
-                            var s4 = "nevada";
+                            // Honduras
+                            var s4 = "honduras";
                             var t4 = e4.value;
                             if(t4 == s4){
                                 t4 = s4; 
@@ -152,8 +156,8 @@
 								incorrect = true;
                             }
                             
-                            // Arizona
-                            var s5 = "arizona";
+                            // Belize
+                            var s5 = "belize";
                             var t5 = e5.value;
                             if(t5 == s5){
                                 t5 = s5; 
@@ -170,8 +174,8 @@
 								incorrect = true;
                             }
                             
-                            // New Mexico
-                            var s6 = "new mexico";
+                            // Nicaragua
+                            var s6 = "nicaragua";
                             var t6 = e6.value;
                             if(t6 == s6){
                                 t6 = s6; 
@@ -188,8 +192,8 @@
 								incorrect = true;
                             }
                             
-                            // Utah
-                            var s7 = "utah";
+                            // Costa Rica
+                            var s7 = "costa rica";
                             var t7 = e7.value;
                             if(t7 == s7){
                                 t7 = s7; 
@@ -206,8 +210,8 @@
 								incorrect = true;
                             }
                             
-                            // Colorado
-                            var s8 = "colorado";
+                            // Panama
+                            var s8 = "panama";
                             var t8 = e8.value;
                             if(t8 == s8){
                                 t8 = s8; 
@@ -224,8 +228,8 @@
 								incorrect = true;
                             }
                             
-                            // Wyoming
-                            var s9 = "wyoming";
+                            // Jamaica
+                            var s9 = "jamaica";
                             var t9 = e9.value;
                             if(t9 == s9){
                                 t9 = s9; 
@@ -242,8 +246,8 @@
 								incorrect = true;
                             }
                             
-                            // Idaho
-                            var s10 = "idaho";
+                            // Cuba
+                            var s10 = "cuba";
                             var t10 = e10.value;
                             if(t10 == s10){
                                 t10 = s10; 
@@ -260,8 +264,8 @@
 								incorrect = true;
                             }
                             
-                            // Montana
-                            var s11 = "montana";
+                            // Haiti
+                            var s11 = "haiti";
                             var t11 = e11.value;
                             if(t11 == s11){
                                 t11 = s11; 
@@ -274,6 +278,24 @@
 								else {
 									e11.value = "";
 									e11.value = e11.value + s11[e11.value.length];
+								}
+								incorrect = true;
+                            }
+                            
+                            // Dominican Republic
+                            var s12 = "dominican republic";
+                            var t12 = e12.value;
+                            if(t12 == s12){
+                                t12 = s12; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s12.indexOf(e12.value.toLowerCase()) == 0) {
+									e12.value = e12.value + s12[e12.value.length];
+								}
+								else {
+									e12.value = "";
+									e12.value = e12.value + s12[e12.value.length];
 								}
 								incorrect = true;
                             }

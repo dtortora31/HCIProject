@@ -22,6 +22,11 @@
     
     <title> Northeast Region </title>
 
+    <script type="text/javascript">
+        score = 1;
+        incorrect = false;
+    </script>
+    
     </head>
     <br>
     
@@ -38,46 +43,218 @@
         <img height="500px" src="northeast_region.png" alt="Northeast" class="center-block">
         <img height="200px" src="NE-table.png">
         <div class="container">
-            <form action="/html/tags/html_form_tag_action.cfm" method="get">
+            <h1 id="scoreText">Your score is 1</h1>
+            <form>
                 1:
-                <input type="text" name="NY" value="" maxlength="100" />
+                <input id="e1" type="text" name="NY" value="" maxlength="100" />
                 <br />
                 2:
-                <input type="text" name="PA" value="" maxlength="100" />
+                <input id="e2" type="text" name="PA" value="" maxlength="100" />
                 <br />
                 3:
-                <input type="text" name="NJ" value="" maxlength="100" />
+                <input id="e3" type="text" name="NJ" value="" maxlength="100" />
                 <br />
                 4:
-                <input type="text" name="CT" value="" maxlength="100" />
+                <input id="e4" type="text" name="CT" value="" maxlength="100" />
                 <br />
                 5:
-                <input type="text" name="RI" value="" maxlength="100" />
+                <input id="e5" type="text" name="RI" value="" maxlength="100" />
                 <br />
                 6:
-                <input type="text" name="MA" value="" maxlength="100" />
+                <input id="e6" type="text" name="MA" value="" maxlength="100" />
                 <br />
                 7:
-                <input type="text" name="VT" value="" maxlength="100" />
+                <input id="e7" type="text" name="VT" value="" maxlength="100" />
                 <br />
                 8:
-                <input type="text" name="NH" value="" maxlength="100" />
+                <input id="e8" type="text" name="NH" value="" maxlength="100" />
                 <br />
                 9:
-                <input type="text" name="ME" value="" maxlength="100" />
+                <input id="e9" type="text" name="ME" value="" maxlength="100" />
                 <br><br />
+                
+                <script type="text/javascript">
+                        function checkStates(){
+                            //New York
+                            var s1 = "new york";
+                            var t1 = e1.value;
+                            if(t1 == s1){
+                                t1 = s1; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s1.indexOf(e1.value.toLowerCase()) == 0) {
+									e1.value = e1.value + s1[e1.value.length];
+								}
+								else {
+									e1.value = "";
+									e1.value = e1.value + s1[e1.value.length];
+								}
+								incorrect = true;
+                            }
+							
+							// Pennsylvania
+                            var s2 = "pennsylvania";
+                            var t2 = e2.value;
+                            if(t2 == s2){
+                                t2 = s2; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s2.indexOf(e2.value.toLowerCase()) == 0) {
+									e2.value = e2.value + s2[e2.value.length];
+								}
+								else {
+									e2.value = "";
+									e2.value = e2.value + s2[e2.value.length];
+								}
+								incorrect = true;
+                            }
+                            
+                            // New Jersey
+                            var s3 = "new jersey";
+                            var t3 = e3.value;
+                            if(t3 == s3){
+                                t3 = s3; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s3.indexOf(e3.value.toLowerCase()) == 0) {
+									e3.value = e3.value + s3[e3.value.length];
+								}
+								else {
+									e3.value = "";
+									e3.value = e3.value + s3[e3.value.length];
+								}
+								incorrect = true;
+                            }
+                            
+                            // Connecticut
+                            var s4 = "connecticut";
+                            var t4 = e4.value;
+                            if(t4 == s4){
+                                t4 = s4; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s4.indexOf(e4.value.toLowerCase()) == 0) {
+									e4.value = e4.value + s4[e4.value.length];
+								}
+								else {
+									e4.value = "";
+									e4.value = e4.value + s4[e4.value.length];
+								}
+								incorrect = true;
+                            }
+                            
+                            // Rhode Island
+                            var s5 = "rhode island";
+                            var t5 = e5.value;
+                            if(t5 == s5){
+                                t5 = s5; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s5.indexOf(e5.value.toLowerCase()) == 0) {
+									e5.value = e5.value + s5[e5.value.length];
+								}
+								else {
+									e5.value = "";
+									e5.value = e5.value + s5[e5.value.length];
+								}
+								incorrect = true;
+                            }
+                            
+                            // Massachusetts
+                            var s6 = "massachusetts";
+                            var t6 = e6.value;
+                            if(t6 == s6){
+                                t6 = s6; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s6.indexOf(e6.value.toLowerCase()) == 0) {
+									e6.value = e6.value + s6[e6.value.length];
+								}
+								else {
+									e6.value = "";
+									e6.value = e6.value + s6[e6.value.length];
+								}
+								incorrect = true;
+                            }
+                            
+                            // Vermont
+                            var s7 = "vermont";
+                            var t7 = e7.value;
+                            if(t7 == s7){
+                                t7 = s7; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s7.indexOf(e7.value.toLowerCase()) == 0) {
+									e7.value = e7.value + s7[e7.value.length];
+								}
+								else {
+									e7.value = "";
+									e7.value = e7.value + s7[e7.value.length];
+								}
+								incorrect = true;
+                            }
+                            
+                            // New Hampshire
+                            var s8 = "new hampshire";
+                            var t8 = e8.value;
+                            if(t8 == s8){
+                                t8 = s8; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s8.indexOf(e8.value.toLowerCase()) == 0) {
+									e8.value = e8.value + s8[e8.value.length];
+								}
+								else {
+									e8.value = "";
+									e8.value = e8.value + s8[e8.value.length];
+								}
+								incorrect = true;
+                            }
+                            
+                            // Maine
+                            var s9 = "maine";
+                            var t9 = e9.value;
+                            if(t9 == s9){
+                                t9 = s9; 
+                            }
+                            else{
+								// if we have matched the beginning of the word
+								if(s9.indexOf(e9.value.toLowerCase()) == 0) {
+									e9.value = e9.value + s9[e9.value.length];
+								}
+								else {
+									e9.value = "";
+									e9.value = e9.value + s9[e9.value.length];
+								}
+								incorrect = true;
+                            }
+                            
+                            // Score Tracker
+							
+							if(incorrect) {
+								score += 1;
+								document.getElementById("scoreText").innerHTML = "Your score is " + score;
+								incorrect = false;
+							}
+                        }
+                
+                </script>
+                
                 <ul class="nav nav-pills center">
 				    <a class="nav-item nav-link active" href="homepage.html">Return Home</a></li>
-				    <a class="nav-item nav-link" href="final_score2.html">Submit</a></li>
 				</ul>
             </form>
+            <button onclick="checkStates()">Submit</button>
             </div>
-	</div><br><br><br>
-    
-    
-    
-    
-    
+	</div><br><br><br>  
   
     </body>
 
